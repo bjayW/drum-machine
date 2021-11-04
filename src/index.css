@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css?family=Russo+One');
+
+body {
+  font-family: 'russo one', 'sans-serif','Segoe UI', 'Fira Sans', 'Droid Sans', 'Helvetica Neue';
+  background-color: grey;
+  color: black;
+}
+.dm-box {
+  position: relative;
+  top: 12.5em;
+  width: 660px;
+  margin: auto auto auto auto;
+  border: 5px solid;
+  border-color: rgb(233, 153, 4);
+  background-color: rgb(184, 182, 182);
+  display: flex;
+  padding: 2em;
+}
+.button-container {
+  display: grid;
+  grid-template-columns: 6.4em 6.4em 6.4em;
+  grid-template-rows: 5em 5em 5em;
+  grid-gap: 1.1em;
+  margin-right: 2em;
+}
+.btn {
+  width: 95px;
+  height: 75px;
+  font-weight: bold;
+  background-color: grey;
+  outline: none !important;
+  box-shadow: 4px 4px 4px rgb(44, 44, 44);
+}
+.dm-rightside {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.power-toggle-button, .bank-toggle-button {
+  position: relative;
+  outline: none !important;
+  -webkit-appearance: none;
+  width: 48px;
+  height: 25px;
+  background-color: black;
+  border: 3px solid black;
+  bottom: 25px;
+  left: 120px;
+}
+.power-toggle-button::before, .bank-toggle-button::before {
+  content: "";
+  height: 19px;
+  width: 20.5px;
+  background-color: blue;
+  position: absolute;
+}
+input:checked {
+  background-color:black !important;
+}
+input:checked::before {
+  transform: translate(100%);
+}
+.bank-toggle-button {
+  position: relative;
+  top: 7.9em;
+}
+.fcc {
+  position: absolute;
+  left: 26.9em;
+  top: -7px;
+  font-weight: bold;
+  font-size: 21px;
+  font-style: italic;
+}
+.bank {
+  position: relative;
+  top: 9.78em;
+  left: 120px;
+  font-size: 16px;
+}
+.power {
+  position: relative;
+  top: 1.5em;
+  left: 120px;
+  font-size: 15px;
+}
+.display-box {
+  position: relative;
+  width: 14em;
+  height: 3.5em;
+  background-color: grey;
+  top: 6em;
+}
+.volume-button {
+  position: relative;
+  top: 3.6em;
+  left: 53.5%;
+  max-width: 18em;
+}
+input[type=range] {
+  -webkit-appearance: none;
+  box-shadow: 2px 2px 2px rgb(59, 59, 59);
+}
+input[type=range]::-webkit-slider-runnable-track {
+  background-color: rgb(59, 59, 59);
+  height: 5px;
+  border: 1.5px solid;
+  
+}
+input[type=range]::-webkit-slider-thumb {
+  width: 9px;
+  height: 28px;
+  margin-top: -12px;
+  background: blue;
+  -webkit-appearance: none;
+}
+.fcc-icon {
+  font-size: 27px;
+  font-style: italic;
+  font-weight: bolder;
+  position: relative;
+  top: 6px;
+}
+.display-text {
+  position: relative;
+  top: 15px;
+}
